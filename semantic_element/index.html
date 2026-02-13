@@ -1,83 +1,147 @@
-    
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Semantic HTML Example</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      line-height: 1.6;
-    }
-    header, nav, section, article, aside, footer {
-      padding: 20px;
-      margin: 10px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-    }
-    nav {
-      background-color: #f4f4f4;
-    }
-    main {
-      display: flex;
-    }
-    article {
-      flex: 2;
-    }
-    aside {
-      flex: 1;
-      background: #f9f9f9;
-    }
-  </style>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML Semantic Elements Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <header>
-    <h1>My Semantic Website</h1>
-    <p>This is an example of all HTML5 semantic tags.</p>
-  </header>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        line-height: 1.6;
+      }
 
-  <nav>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Articles</a></li>
-      <li><a href="#">About</a></li>
-    </ul>
-  </nav>
+      header,
+      nav,
+      main,
+      section,
+      article,
+      aside,
+      footer {
+        padding: 20px;
+        margin: 10px;
+        border-radius: 6px;
+      }
 
-  <main>
-    <article>
-      <header>
-        <h2>Article Title</h2>
-        <p>Written by John Doe</p>
-      </header>
+      header {
+        background: #222;
+        color: white;
+        text-align: center;
+      }
 
+      nav {
+        background: #f4f4f4;
+      }
+
+      nav a {
+        margin-right: 15px;
+        text-decoration: none;
+        color: #333;
+      }
+
+      main {
+        display: flex;
+        gap: 20px;
+      }
+
+      section {
+        flex: 3;
+        background: #fafafa;
+      }
+
+      article {
+        background: #eaeaea;
+        margin-bottom: 15px;
+      }
+
+      aside {
+        flex: 1;
+        background: #ddd;
+      }
+
+      figure {
+        text-align: center;
+      }
+
+      figcaption {
+        font-size: 0.9em;
+        color: #555;
+      }
+
+      footer {
+        background: #222;
+        color: white;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+      <h1>Sakariye Abdikariin</h1>
+      <p>Frontend • Backend • Mobile Developer</p>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Projects</a>
+      <a href="#">Contact</a>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <!-- SECTION -->
       <section>
-        <h3>Introduction</h3>
-        <p>This section introduces the topic using semantic elements.</p>
+        <h2>About Me</h2>
+
+        <!-- ARTICLE -->
+        <article>
+          <h3>Who I Am</h3>
+          <p>
+            I am a software developer passionate about building web and mobile
+            applications using modern technologies.
+          </p>
+        </article>
+
+        <!-- ARTICLE -->
+        <article>
+          <h3>What I Do</h3>
+          <p>
+            I work with HTML, CSS, JavaScript, backend systems, and mobile apps.
+          </p>
+        </article>
+
+        <!-- FIGURE -->
+        <figure>
+          <img src="https://via.placeholder.com/300" alt="Profile image" />
+          <figcaption>Sample Profile Image</figcaption>
+        </figure>
       </section>
 
-      <section>
-        <h3>Details</h3>
-        <p>This section goes into detail.</p>
-      </section>
+      <!-- ASIDE -->
+      <aside>
+        <h3>Quick Info</h3>
+        <ul>
+          <li>Location: UK</li>
+          <li>Experience: Student</li>
+          <li>Availability: Open</li>
+        </ul>
+      </aside>
+    </main>
 
-      <footer>
-        <p>Article footer - last updated July 2025.</p>
-      </footer>
-    </article>
-
-    <aside>
-      <h3>Sidebar</h3>
-      <p>This is an aside for related links or content.</p>
-    </aside>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Semantic Site. All rights reserved.</p>
-  </footer>
-
-</body>
+    <!-- FOOTER -->
+    <footer>
+      <p>&copy; 2026 Sakariye Abdikariin</p>
+      <address>
+        Contact:
+        <a href="mailto:sakariye@example.com" style="color: #00ffff">
+          sakariye@example.com
+        </a>
+      </address>
+    </footer>
+  </body>
 </html>

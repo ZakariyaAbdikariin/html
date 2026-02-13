@@ -1,78 +1,136 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Global Attributes Example</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-    }
-    *[hidden] {
-      display: none;
-    }
-    .tooltip:hover::after {
-      content: attr(title);
-      position: absolute;
-      background: #222;
-      color: #fff;
-      padding: 4px 8px;
-      border-radius: 4px;
-      font-size: 12px;
-      margin-left: 4px;
-    }
-  </style>
-</head>
-<body>
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML Global Attributes with DIV</title>
+  </head>
 
-  <h1 id="main-heading" class="tooltip" title="Main Page Title" data-info="heading" contenteditable="true" spellcheck="true" dir="ltr" lang="en" tabindex="0" accesskey="h">
-    Global Attributes in Action
-  </h1>
+  <body
+    id="body-id"
+    class="body-class"
+    title="Body element"
+    data-role="page"
+    tabindex="0"
+  >
+    <header
+      id="header-id"
+      class="header-class"
+      title="Header section"
+      style="background: #ddd; padding: 20px"
+    >
+      <h1
+        id="heading-id"
+        class="heading-class"
+        title="Editable heading"
+        contenteditable="true"
+        spellcheck="true"
+      >
+        Global Attributes Demo (Including DIV)
+      </h1>
+    </header>
 
-  <p id="intro" class="tooltip" title="This is a paragraph." contenteditable="true" dir="ltr" lang="en" spellcheck="true" hidden="false" tabindex="1" accesskey="p" data-custom="intro-paragraph">
-    This paragraph uses all the global attributes you can assign to an HTML element.
-  </p>
+    <nav id="nav-id" class="nav-class" title="Navigation bar">
+      <a
+        href="#main"
+        id="nav-link"
+        class="link-class"
+        title="Jump to main"
+        accesskey="m"
+        tabindex="1"
+      >
+        Go to Main
+      </a>
+    </nav>
 
-  <button 
-    id="myBtn"
-    class="tooltip"
-    title="Click me!"
-    contenteditable="false"
-    dir="ltr"
-    lang="en"
-    hidden="false"
-    tabindex="2"
-    accesskey="b"
-    spellcheck="false"
-    data-action="submitForm"
-    draggable="true"
-    aria-label="Submit Button">
-    Submit
-  </button>
+    <main id="main" class="main-class" title="Main content">
+      <!-- DIV WITH GLOBAL ATTRIBUTES -->
+      <div
+        id="div-container"
+        class="box container"
+        title="This is a div"
+        data-box="wrapper"
+        style="border: 2px solid black; padding: 15px; margin-bottom: 20px"
+      >
+        <p
+          id="para-id"
+          class="para-class"
+          title="Editable paragraph"
+          contenteditable="true"
+          draggable="true"
+        >
+          This paragraph is inside a div and is editable & draggable.
+        </p>
 
-  <div 
-    id="infoBox"
-    class="tooltip"
-    title="Info box"
-    dir="auto"
-    contenteditable="true"
-    lang="en"
-    tabindex="3"
-    accesskey="i"
-    spellcheck="true"
-    data-box="info"
-    style="border: 1px solid #ccc; padding: 10px; margin-top: 20px;">
-    Edit me and see how global attributes work!
-  </div>
-<img  id="infoBox"
-    class="tooltip"
-    title="Info box"
-    dir="auto"
-    contenteditable="true"
-    lang="en"
-    tabindex="3"
-    accesskey="i"
-    spellcheck="true"
-    data-box="info" src="" alt="">
-</body>
+        <input
+          type="text"
+          id="input-id"
+          class="input-class"
+          title="Text input"
+          placeholder="Type here"
+          spellcheck="false"
+          tabindex="2"
+        />
+      </div>
+      <img
+        type="text"
+        id="input-id"
+        class="input-class"
+        title="Text input"
+        placeholder="Type here"
+        spellcheck="false"
+        tabindex="2"
+        src=""
+        alt=""
+      />
+      <section
+        id="section-id"
+        class="section-class"
+        title="Section element"
+        data-section="info"
+      >
+        <button
+          id="button-id"
+          class="button-class"
+          title="Action button"
+          accesskey="b"
+        >
+          Button
+        </button>
+      </section>
+
+      <article
+        id="article-id"
+        class="article-class"
+        title="Article element"
+        lang="en"
+      >
+        <h2
+          id="article-heading"
+          class="article-heading"
+          title="Article heading"
+        >
+          Article Title
+        </h2>
+
+        <p id="article-text" class="article-text" title="Article paragraph">
+          Article content goes here.
+        </p>
+      </article>
+
+      <aside id="aside-id" class="aside-class" title="Hidden aside" hidden>
+        This aside is hidden
+      </aside>
+
+      <footer
+        id="footer-id"
+        class="footer-class"
+        title="Footer area"
+        style="margin-top: 30px; text-align: center"
+      >
+        <small id="small-id" class="small-class" title="Footer text">
+          © 2026 Global Attributes Demo
+        </small>
+      </footer>
+    </main>
+  </body>
 </html>
